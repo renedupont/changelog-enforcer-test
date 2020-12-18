@@ -13,3 +13,5 @@ jobs:
       with:
         changeLogPath: 'CHANGELOG.md'
         skipLabels: 'Skip-Changelog'
+    - run: echo runs on failure
+      if: failed()
